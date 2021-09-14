@@ -1,0 +1,5 @@
+#single-end reads unmap
+samtools view -f 4 $sam |cut -f1 > $output
+
+#single-end reads map
+samtools view -F 4 $sam |cut -f1 > $output
